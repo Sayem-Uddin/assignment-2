@@ -57,7 +57,7 @@ margin: 35px 130px 0px 130px;
     font-size: 64px;
     font-weight: 800;
     font-family: Mulish;
-    /* text-align: center; */
+
 }
 .intro p{
     color: #FFF;
@@ -112,4 +112,28 @@ margin: 35px 130px 0px 130px;
 }
 
     
-
+@media screen and (max-width:576px) {
+    .navigation{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .intro{
+        margin: 5%;
+        background-position: center;
+        aspect-ratio: 335/445;
+    }
+    .intro h1{
+        font-size: 22px;
+    }
+    .intro p{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .introduction{
+        padding: 0px;
+    }
+    .information-taker{
+        height: 60%;
+    }
+}
