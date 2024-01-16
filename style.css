@@ -21,7 +21,9 @@ margin: 35px 130px 0px 130px;
 .name-container span{
     color: #FF5400;
 }
-
+.name-container img{
+    width: 120px;
+}
 
 .nav-service-container{
     width: 50%;
@@ -59,7 +61,7 @@ justify-content: space-between;
 
 }
 .introduction{
-    padding-top: 170px;
+    padding-top:50px;
 }
 .intro h1{
     align-items: center;
@@ -69,22 +71,23 @@ justify-content: space-between;
     font-weight: 800;
     font-family: Mulish;
     text-align: center;
-
+    
+    
 }
 .intro p{
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
     font-family: Mulish;
-    margin-top: -50px;
+    
 }
 .information-taker{
-    width: 60%;
-    height: 100px;
+    width: 85%;
+    height: 95px;
     border-radius: 8px;
     background-color:rgba(255, 255, 255, 0.30);;
     margin: auto;
-    margin-top: -5px;
+    margin-top: -35px;
  
     
 
@@ -98,7 +101,7 @@ justify-content: space-between;
 
 .information-taker input{
   width: 174px;
-  height: 52px;
+  height: 45px;
   border-radius: 8px;
   background-color: #FFF;
   padding:20px ;
@@ -109,7 +112,7 @@ justify-content: space-between;
 }
 .btn-primary{
     width: 174px;
-    height: 52px;
+    height: 45px;
     border-radius: 8px;
     background-color: #FF5400;
     color: #FFF;
@@ -122,14 +125,14 @@ justify-content: space-between;
 }
 /* header photo end */
 /* popular trour */
-.popular-tour{
+.popular-tour,.simple-place,.log-in{
     display: flex;
     margin: 100px 130px 0px 130px;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
 }
-.popular-tour .description h1{
+.popular-tour,.simple-place,.left .description h1{
     text-align: left;
 }
     
@@ -270,16 +273,135 @@ padding-bottom: 20px;
     padding-left: 20px;
     padding-top: 20px;
 }
+/* deals and discount */
+.deals-discount{
+    margin: 100px 130px 0px 130px;
+  
+}
+.discount h3{
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+.discount {
+    border-radius: 16px;
+border: 2px solid #FFF;
+background-color: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(2.5px);
+max-width: 500px;
+}
+.deals1 .discount{
+    margin-left: 40%;
+}
+.deals1, .deals2{
+    padding-top:150px;
+}
+.deals2 .discount{
+    margin-left: 10%;
+}
+.deals-discount .description p{
+    text-align: center;
+}
+.deals1{
+    background-image: url(./Images/Group\ 39.png);
+    aspect-ratio: 1170/500;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+.deals2{
+    background-image:url(./Images/Group\ 40.png) ;
+    aspect-ratio: 1170/500;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+.discount h1{
+ text-align: start;
+  
+}
+
+.discount{
+    padding: 40px;
+}
+/* sipmle place */
+.simple-place li{
+    color: #131318;
+font-family: Mulish;
+font-size: 16px;
+font-weight: 700;
+}
+/* login section */
+.log-in
+{
+    align-items:top;
+}
+.left
+{
+    border-radius: 16px;
+border: 1px solid #FF5400;
+padding: 40px;
+
+}
+.left .description{
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    
+} 
+.login input{
+    width: 393px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-top: 20px;
+    padding-left: 20px;
+
+}
+.login button{
+    margin-top: 20px;
+    width: 413px;
+}
+
+.offer{
+   width: 324px;
+height: 120px;
+transform: translateX(350px) translateY(-190px) rotate(-19.628deg);
+border-radius: 16px;
+background: #FF5400;
+text-align: center;
+padding: 3px;
+}
+.offer h3{
+    color: #FFF;
+font-family: Mulish;
+font-size: 32px;
+font-weight: 800;
+margin-top:-20px;
+}
+.offer p{
+    color: #FFF;
+font-family: Mulish;
+font-size: 24px;
+font-weight: 400;
+margin-bottom: -20px;
+
+
+}
 /* footer section */
 .foot{
  
   flex-direction: column;
   text-align: center;
-  margin: 100px 130px 0px 130px;
+  margin: 100px 0px 0px 0px;
+  background-color: rgba(19, 19, 24, 0.05);
  
 }
 .foot-container .name-container{
-  justify-content: center;
+  padding: 0% 30%;
 }
 .foot-container{
     padding: 50px;
@@ -352,9 +474,9 @@ font-weight: 400;
     .information-taker button{
         margin-top: 20px;
     }
-    .popular-tour{
+    .popular-tour, .simple-place{
         flex-direction: column;
-        margin: 5%;
+        margin:5%;
         
     }
     .pt-photo{
@@ -383,6 +505,15 @@ font-weight: 400;
      .service1, .service2, .service3, p{
         padding-right: 20px;
      }
+     .login input{
+        width: 288px;
+     }
+     .login button{
+        width:308px;
+     }
+     .login img{
+        width: 330px;
+     }
      .foot{
         margin: 5%;
      }
@@ -396,4 +527,80 @@ font-weight: 400;
      .last{
         margin-top: 20px;
      }
+     .foot-container .name-container{
+      padding: 0% 7%;
+      }
+      .log-in{
+        flex-direction: column;
+    }
+
+.deals-discount{
+    margin: 5%;
+}
+.deals1, .deals2 {
+    width: 335px;
+height: 500px;
+/* margin: 5%;
+padding: 5%; */
+}
+.discount{
+    width: 250px;
+height: 297px;
+padding: 10px;
+transform:translateX(32px) translateY(150px) ;
+}
+.deals1 .discount{
+    margin: 0px;
+}
+.deals1, .deals2{
+    padding-top:0px;
+}
+.deals2 .discount{
+    margin-left: 0%;
+}
+
+.discount h1{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+  
+     
+   }
+   .discount .pera{
+    font-size: 14px;
+    font-weight: 400;
+   }
+   .discount button{
+    width: 130px;
+height: 40px;
+
+   }
+   .discount h3{
+font-size: 16px;
+font-weight: 800;
+
+   }
+   .pic{
+    width: 335px;
+height: 300px;
+
+   }
+
+   .offer{
+    width: 210px;
+ height: 80px;
+ transform: translateX(130px) translateY(-125px) rotate(-19.628deg);
+ 
+ 
+ }
+
+ .offer h3{
+    font-size: 21px;
+ }
+
+ .offer p{
+font-size: 16px;
+ }
+
 }
